@@ -1,0 +1,35 @@
+patients train/val/test: 78/16/16 | slices train/val/test: 2845/544/540
+tumour fraction  train: 34.4%  val: 37.3%  test: 35.6%
+epoch   1 | loss 0.8713 | train tumour fraction 34.4% | val Dice 0.7485 | val Dice (tumour only) 0.3309
+epoch   2 | loss 0.3816 | train tumour fraction 34.4% | val Dice 0.7488 | val Dice (tumour only) 0.3317
+epoch   3 | loss 0.3395 | train tumour fraction 34.4% | val Dice 0.8201 | val Dice (tumour only) 0.5228
+epoch   4 | loss 0.3072 | train tumour fraction 34.4% | val Dice 0.8284 | val Dice (tumour only) 0.5500
+epoch   5 | loss 0.2730 | train tumour fraction 34.4% | val Dice 0.8178 | val Dice (tumour only) 0.6891
+epoch   6 | loss 0.2700 | train tumour fraction 34.4% | val Dice 0.8467 | val Dice (tumour only) 0.7073
+epoch   7 | loss 0.2554 | train tumour fraction 34.4% | val Dice 0.8748 | val Dice (tumour only) 0.7187
+epoch   8 | loss 0.2329 | train tumour fraction 34.4% | val Dice 0.8177 | val Dice (tumour only) 0.5311
+epoch   9 | loss 0.2260 | train tumour fraction 34.4% | val Dice 0.8746 | val Dice (tumour only) 0.6985
+epoch  10 | loss 0.2266 | train tumour fraction 34.4% | val Dice 0.8578 | val Dice (tumour only) 0.6239
+epoch  11 | loss 0.2283 | train tumour fraction 34.4% | val Dice 0.8289 | val Dice (tumour only) 0.5463
+epoch  12 | loss 0.2291 | train tumour fraction 34.4% | val Dice 0.8829 | val Dice (tumour only) 0.7306
+epoch  13 | loss 0.2099 | train tumour fraction 34.4% | val Dice 0.8775 | val Dice (tumour only) 0.6914
+epoch  14 | loss 0.1949 | train tumour fraction 34.4% | val Dice 0.8630 | val Dice (tumour only) 0.6427
+epoch  15 | loss 0.1975 | train tumour fraction 34.4% | val Dice 0.8893 | val Dice (tumour only) 0.7083
+epoch  16 | loss 0.1798 | train tumour fraction 34.4% | val Dice 0.8728 | val Dice (tumour only) 0.6642
+epoch  17 | loss 0.1801 | train tumour fraction 34.4% | val Dice 0.8737 | val Dice (tumour only) 0.6715
+epoch  18 | loss 0.1586 | train tumour fraction 34.4% | val Dice 0.8605 | val Dice (tumour only) 0.6312
+epoch  19 | loss 0.1955 | train tumour fraction 34.4% | val Dice 0.8361 | val Dice (tumour only) 0.5656
+epoch  20 | loss 0.2025 | train tumour fraction 34.4% | val Dice 0.8839 | val Dice (tumour only) 0.6988
+best VAL Dice: 0.8893
+TEST Dice: 0.8974 | tumour only: 0.7322 | tumour-free (1.0 = no false positives): 0.9885
+TEST Dice by tumour size (tertiles of the ground-truth area): small 0.4674 | medium 0.8368 | large 0.8925
+TEST failure categories:
+   344  correct (tumour-free slice, empty prediction)
+   148  good (tumour slice, Dice >= 0.7)
+    26  missed tumour (empty prediction)
+    17  under-segmentation (prediction < 60 % of the tumour area)
+     4  false positive (tumour-free slice, non-empty prediction)
+     1  wrong location (prediction does not overlap the tumour)
+540 test overlays + per_image.csv + grid.png saved to results_aug/
+history.csv + metrics.json saved to results_aug/
+W&B run: https://forge.coreweave.com/wandb/segmentation-zneus/lgg-mri-segmentation/runs/qsrmltdi

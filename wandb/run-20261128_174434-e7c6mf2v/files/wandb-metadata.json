@@ -1,0 +1,56 @@
+{
+  "os":  "Windows-11-10.0.26300-SP0",
+  "python":  "CPython 3.14.4",
+  "startedAt":  "2026-11-28T16:44:34.045600Z",
+  "args":  [
+    "--root",
+    ".\\lgg-mri-segmentation",
+    "--wandb-host",
+    "https://api.wandb.ai",
+    "--wandb-group",
+    "final",
+    "--augment",
+    "--lesion-oversampling",
+    "--run-name",
+    "aug-oversample"
+  ],
+  "program":  "C:\\Users\\toth1\\OneDrive\\Dokumentumok\\ZNEUS\\U-net.py",
+  "codePath":  "U-net.py",
+  "codePathLocal":  "U-net.py",
+  "git":  {
+    "remote":  "https://github.com/Robi1125/ZNEUS---Medical-image-segmentation.git",
+    "commit":  "7d13fff005818d748291960fdc65790b3e89efc5"
+  },
+  "email":  "xtothr@stuba.sk",
+  "root":  "C:\\Users\\toth1\\OneDrive\\Dokumentumok\\ZNEUS",
+  "host":  "RobertToth",
+  "executable":  "C:\\Python314\\python.exe",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "gpu":  "NVIDIA GeForce GTX 1070",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "499018653696",
+      "used":  "474497900544"
+    }
+  },
+  "memory":  {
+    "total":  "16842186752"
+  },
+  "cpu":  {
+    "model":  "Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce GTX 1070",
+      "memoryTotal":  "8589934592",
+      "cudaCores":  1920,
+      "architecture":  "Pascal",
+      "uuid":  "GPU-0a3ef175-3e9c-6047-eb2f-77139760e95a",
+      "pciBusId":  "00000000:17:00.0"
+    }
+  ],
+  "cudaVersion":  "12.6",
+  "writerId":  "01a2230b-5192-74b1-9708-c7c2926240e0"
+}

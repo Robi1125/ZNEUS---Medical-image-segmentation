@@ -1,0 +1,53 @@
+{
+  "run": "aug",
+  "args": {
+    "root": ".\\lgg-mri-segmentation",
+    "epochs": 20,
+    "bs": 16,
+    "lr": 0.001,
+    "weights": "imagenet",
+    "val_frac": 0.15,
+    "test_frac": 0.15,
+    "channel": 1,
+    "augment": true,
+    "lesion_oversampling": false,
+    "crop_size": 128,
+    "workers": 2,
+    "run_name": "aug",
+    "no_wandb": false,
+    "wandb_project": "lgg-mri-segmentation",
+    "wandb_entity": "segmentation-zneus",
+    "wandb_group": "final",
+    "wandb_host": "https://api.wandb.ai",
+    "wandb_mode": "online"
+  },
+  "patients": {
+    "test": 16,
+    "val": 16,
+    "train": 78
+  },
+  "slices": {
+    "test": 540,
+    "val": 544,
+    "train": 2845
+  },
+  "best_val_dice": 0.8893131017684937,
+  "test": {
+    "dice": 0.8973919630824095,
+    "dice_tumor_only": 0.73224822950261,
+    "dice_tumor_free": 0.9885057471264368,
+    "dice_by_tumor_size": {
+      "small": 0.467421704726364,
+      "medium": 0.8368408548494447,
+      "large": 0.8924821289320218
+    },
+    "failure_categories": {
+      "correct_empty": 344,
+      "good": 148,
+      "missed": 26,
+      "false_positive": 4,
+      "under": 17,
+      "wrong_location": 1
+    }
+  }
+}

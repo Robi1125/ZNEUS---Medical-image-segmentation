@@ -1,0 +1,152 @@
+_wandb:
+    value:
+        cli_version: 0.31.2
+        e:
+            01a222e1-1014-7b7c-aecd-bc774d0673f9:
+                args:
+                    - --root
+                    - .\lgg-mri-segmentation
+                    - --wandb-host
+                    - https://api.wandb.ai
+                    - --wandb-group
+                    - final
+                    - --augment
+                    - --run-name
+                    - aug
+                codePath: U-net.py
+                codePathLocal: U-net.py
+                cpu:
+                    model: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz
+                cpu_count: 6
+                cpu_count_logical: 12
+                cudaVersion: "12.6"
+                disk:
+                    /:
+                        total: "499018653696"
+                        used: "473037180928"
+                email: xtothr@stuba.sk
+                executable: C:\Python314\python.exe
+                git:
+                    commit: 7d13fff005818d748291960fdc65790b3e89efc5
+                    remote: https://github.com/Robi1125/ZNEUS---Medical-image-segmentation.git
+                gpu: NVIDIA GeForce GTX 1070
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Pascal
+                      cudaCores: 1920
+                      memoryTotal: "8589934592"
+                      name: NVIDIA GeForce GTX 1070
+                      pciBusId: "00000000:17:00.0"
+                      uuid: GPU-0a3ef175-3e9c-6047-eb2f-77139760e95a
+                host: RobertToth
+                memory:
+                    total: "16842186752"
+                os: Windows-11-10.0.26300-SP0
+                program: C:\Users\toth1\OneDrive\Dokumentumok\ZNEUS\U-net.py
+                python: CPython 3.14.4
+                root: C:\Users\toth1\OneDrive\Dokumentumok\ZNEUS
+                startedAt: "2026-11-28T15:58:24.781329Z"
+                writerId: 01a222e1-1014-7b7c-aecd-bc774d0673f9
+        m:
+            - "1": epoch
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.14.4
+        t:
+            "1":
+                - 1
+                - 41
+                - 49
+                - 63
+                - 74
+            "2":
+                - 1
+                - 41
+                - 49
+                - 63
+                - 74
+            "3":
+                - 2
+                - 7
+                - 13
+                - 15
+                - 16
+                - 62
+                - 78
+            "4": 3.14.4
+            "5": 0.31.2
+            "8":
+                - 3
+                - 17
+            "12": 0.31.2
+            "13": windows-amd64
+augment:
+    value: true
+bs:
+    value: 16
+channel:
+    value: 1
+crop_size:
+    value: 128
+dataset:
+    value: LGG-MRI
+encoder:
+    value: resnet34
+epochs:
+    value: 20
+in_channels:
+    value: 1
+lesion_oversampling:
+    value: false
+lr:
+    value: 0.001
+n_patients_test:
+    value: 16
+n_patients_train:
+    value: 78
+n_patients_val:
+    value: 16
+n_slices_test:
+    value: 540
+n_slices_train:
+    value: 2845
+n_slices_val:
+    value: 544
+no_wandb:
+    value: false
+root:
+    value: .\lgg-mri-segmentation
+run:
+    value: aug
+run_name:
+    value: aug
+test_frac:
+    value: 0.15
+tumor_fraction_test:
+    value: 0.35555555555555557
+tumor_fraction_train_natural:
+    value: 0.3437609841827768
+tumor_fraction_val:
+    value: 0.37316176470588236
+val_frac:
+    value: 0.15
+wandb_entity:
+    value: segmentation-zneus
+wandb_group:
+    value: final
+wandb_host:
+    value: https://api.wandb.ai
+wandb_mode:
+    value: online
+wandb_project:
+    value: lgg-mri-segmentation
+weights:
+    value: imagenet
+workers:
+    value: 2
